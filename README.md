@@ -37,7 +37,8 @@ portfolio/
 ├── index.html
 ├── style.css
 ├── images/
-│   ├── prof2.png
+│   ├── prof1.png
+    |── prof2.png
 │   ├── work-1.png
 │   ├── work-ex.png
 │   └── work-fk.png
