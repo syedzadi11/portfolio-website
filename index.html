@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+    <h1>JS.</h1>
+    
+
+    <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+        <i class="fas fa-times" onclick="closemenu()"></i>
+    </ul>
+
+    <i class="fas fa-bars" onclick="openmenu()"></i>
+
+</nav>
+
+
+<div class="header-content">
+
+    <div class="header-text">
+        <p>Web Developer</p>
+
+        <h1>
+            Hi, I'm <br>
+            <span>Jannah syeda</span>
+        </h1>
+       
+    </div>
+
+    <div class="header-image">
+        <img src="images/prof2.png" alt="">
+    </div>
+
+</div>
+            
+            
+        </div>
+    </div>
+
+    <!-- -------------------about----------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhNBoK9hm5hypdX3jcVOt8iAMztKxn8LvPQA&s" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate full stack developer dedicated to building modern, scalable, and user-friendly web applications. 
+                        I specialize in developing responsive frontend interfaces and robust backend APIs, with a strong focus on clean code, performance, and best development practices. 
+                        I am continuously enhancing my skills by learning new technologies and applying them to real-world projects.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend</span><br>HTML, CSS, JavaScript, React.js</li>
+                            <li><span>Backend</span><br>Python(Flask), Node.js, REST APIs</li>
+                            <li><span>SEO</span><br>Off-page SEO, backlink building, link outreach, improving website authority and search rankings</li>
+                            <li><span>Tools</span><br>GitHub,
+                                VS Code, Postman,<br> 
+                                Google Search Console,<br>
+                                 Google Analytics, <br>
+                                Ahrefs, SEMrush, Moz</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Education</span><br>
+                                Bachelor's in Computer Science (In Progress)<br>
+                                Focused on Web Development
+                            </li>
+
+                            <li><span>SEO Training</span><br>
+                                2023 - 2024<br>
+                                Trained in Off-page SEO, backlink building, and link outreach
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------project------------------------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-fk.png">
+                    <div class="layer">
+                        <h3>Flask-Todo-API</h3>
+                        <p>Created a Todo API using Flask with complete CRUD operations 
+                            to add, update, delete, and manage tasks through backend 
+                            API endpoints.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-ex.png">
+                    <div class="layer">
+                        <h3>Express-Todo-APP</h3>
+                        <p>Developed a Todo REST API using Express.js for handling task management
+                             operations with efficient backend request handling and API integration.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Built a responsive Calculator Application using HTML, CSS, and JavaScript 
+                            with support for basic arithmetic operations and interactive user interface
+                             design</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ---------------------------contact--------------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0123-456789</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <a href="files/CV.pdf" Download class="btn btn2">Download CV</a>
+                    
+
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Your Email" required>
+                        <textarea name="Message" rows="6" roplaceholder="Enter Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Designed & Developed by Jannah Syeda © 2026</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+    </script>
+    <script>
+
+const scriptURL = "https://script.google.com/macros/s/AKfycbzQEttSbvgztG0SJmI8PzXw9Mj00ezyWn-MQPoYCTG-n3_i7u07982bd2wCF9f3sLtXuA/exec";
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", async (e) => {
+
+    e.preventDefault();
+
+    const formData = {
+        Name: form.Name.value,
+        Email: form.Email.value,
+        Message: form.Message.value
+    };
+
+    try{
+
+        await fetch(scriptURL, {
+            method: "POST",
+            body: JSON.stringify(formData)
+        });
+
+        alert("Message Sent Successfully!");
+
+        form.reset();
+
+    } catch(error){
+
+        alert("Something went wrong!");
+
+    }
+
+});
+
+</script>
+</body>
+</html>
